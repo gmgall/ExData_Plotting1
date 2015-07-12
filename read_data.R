@@ -34,3 +34,6 @@ dataOfInterestDF <- powerConsumptionDF[neededData,]
 
 # Remove unnecessary variables
 rm(neededData, powerConsumptionDF)
+
+# Using the correct locale for the weekdays names
+Sys.setlocale("LC_TIME", "en_US.utf8")
